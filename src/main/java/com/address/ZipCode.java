@@ -6,9 +6,9 @@ public class ZipCode {
 	private String gugun;
 	private String dong;
 	private String bunji;
-	private int sqe;
+	private int seq;
 	
-	//setter,getter
+	//setter, getter
 	public String getZipcode() {
 		return zipcode;
 	}
@@ -16,13 +16,13 @@ public class ZipCode {
 		this.zipcode = zipcode;
 	}
 	public String getSido() {
-		return sido==null?"":sido.trim();
+		return sido==null? "" : sido;
 	}
 	public void setSido(String sido) {
 		this.sido = sido;
 	}
 	public String getGugun() {
-		return gugun;
+		return gugun==null? "" : gugun;
 	}
 	public void setGugun(String gugun) {
 		this.gugun = gugun;
@@ -31,19 +31,19 @@ public class ZipCode {
 		return dong;
 	}
 	public void setDong(String dong) {
-		this.dong = dong;
+		this.dong = dong ==null ? "" : dong;
 	}
 	public String getBunji() {
-		return bunji==null?"":bunji.trim();
+		return bunji==null ? "" : bunji.trim();
 	}
 	public void setBunji(String bunji) {
 		this.bunji = bunji;
 	}
-	public int getSqe() {
-		return sqe;
+	public int getSeq() {
+		return seq;
 	}
-	public void setSqe(int sqe) {
-		this.sqe = sqe;
+	public void setSeq(int seq) {
+		this.seq = seq;
 	}
 	
 	

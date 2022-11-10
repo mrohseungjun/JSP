@@ -8,17 +8,20 @@
 </head>
 <body>
 <%
-// 스크립트릿
-
-String name = request.getParameter("name");
+//스크립트릿
+String name  = request.getParameter("name");
 String addr = request.getParameter("addr");
-
 %>
-이름:<% out.println(name); %><br/>
-주소:<% out.println(addr); %><br/>
+이름 서버  : <%  out.println(name); %><br/>
+주소 서버 :<% out.println(addr) ;%>
 <hr/>
-이름: <%=name %><br/>
-주소: <%=addr %><br/>
-
+이름 : <%= name %><br/>
+주소 :  <%= addr %>
 </body>
 </html>
+
+
+
+
+
+

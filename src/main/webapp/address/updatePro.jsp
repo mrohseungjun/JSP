@@ -7,7 +7,8 @@
 <jsp:useBean id="ad" class="com.address.Address"></jsp:useBean>
 <jsp:setProperty property="*" name="ad" />
 
-<% 
-AddressDAO dao = AddressDAO.getInstance();
-dao.addrUpdate(ad);
-response.sendRedirect("list.jsp"); %>
+<%
+	AddressDAO dao = AddressDAO.getInstance();
+	dao.addrUpdate(ad);
+	response.sendRedirect("list.jsp");
+%>

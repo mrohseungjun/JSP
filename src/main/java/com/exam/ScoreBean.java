@@ -6,6 +6,7 @@ public class ScoreBean {
 	private int eng;
 	private int math;
 	
+	//getter, setter
 	public String getName() {
 		return name;
 	}
@@ -30,38 +31,31 @@ public class ScoreBean {
 	public void setMath(int math) {
 		this.math = math;
 	}
+	//ÃÑÁ¡
 	public int getTotal() {
-		int total = kor + eng + math;
-		return total;
+		return kor+eng+math;
 	}
 	
+	//Æò±Õ
 	public float getAvg() {
-		float avg =  (kor + eng + math)/3 ;
-		return avg;
+		return (kor+eng+math)/3.0f;
 	}
+	
+	//ÇÐÁ¡
 	public String getGrade() {
-		//float avg =  (kor + eng + math)/3;
-		
-		
-		getAvg();
 		String grade = "";
-		if(getAvg() >= 90) {
-			grade = "A";
-		}
-		else if(getAvg() >= 80) {
-			grade = "B";
-		}
-		else if(getAvg() >= 70) {
-			grade = "C";
+		//getTotal()/3/10
+		switch((int)getAvg()/10){  // 90~99 / 80~89 / 70~79
+			case 10:
+			case 9:  grade = "A"; break;
+			case 8: grade = "B"; break;
+			case 7: grade = "C"; break;
+			default: grade = "F"; 
 		}
 		return grade;
 	}
 	
-	//Æò±Õ
-	
-	//ÇÐÁ¡
-	
-
-	
 }
+
+
 

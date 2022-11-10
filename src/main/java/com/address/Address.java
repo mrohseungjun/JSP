@@ -7,6 +7,8 @@ public class Address {
 	private String addr;
 	private String tel;
 	
+	
+	//getter, setter
 	public int getNum() {
 		return num;
 	}
@@ -37,6 +39,7 @@ public class Address {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
+	
 	
 	
 
